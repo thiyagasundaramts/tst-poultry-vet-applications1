@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search the Poultry Health Toolbox - India by product, ingredient, company, clinical subject or institution.">
+  <title>The Poultry Health Toolbox - India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b3b66'/%3E%3Cpath fill='white' d='M17 42c0-11 8-20 19-20 2-7 8-9 12-6-4 1-6 4-5 8 5 3 7 8 6 13-1 9-9 14-19 14H17z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="toolbox-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header blue"><a class="brand" href="index.html"><span class="brand-mark">PH</span><span><strong>The Poultry Health Toolbox — India</strong><small>Digital Practitioner Reference</small></span></a><button class="menu-button" aria-expanded="false" aria-controls="primary-nav">Menu</button><nav id="primary-nav" class="primary-nav"><a href="index.html">Home</a><a class="active" href="toolbox.html">Toolbox</a><a href="about.html">About</a></nav></header>
+  <main id="main" class="toolbox-shell">
+    <section class="search-intro">
+      <div><p class="eyebrow">30 categories · 8 decision areas</p><h1>Find practical poultry-health information</h1><p>Search the directory or choose a decision area below.</p></div>
+      <label class="search-box"><span class="visually-hidden">Search records</span><input id="search-input" type="search" placeholder="Search product, company, ingredient, use or institution"><button id="clear-search" type="button">Clear</button></label>
+    </section>
+    <section id="decision-areas" aria-labelledby="areas-heading"><div class="section-heading compact"><h2 id="areas-heading">Browse by decision area</h2><button class="link-button" id="show-all" type="button">Show all records</button></div><div id="area-buttons" class="area-grid"></div></section>
+    <section class="reference-layout" aria-labelledby="results-heading">
+      <aside class="filters"><h2>Refine results</h2><label>Category<select id="category-filter"><option value="">All categories</option></select></label><label>Verification status<select id="status-filter"><option value="">All statuses</option></select></label><div class="index-links"><h3>Quick indexes</h3><button data-sort="product">Product A–Z</button><button data-sort="company">Company A–Z</button><button data-sort="generic">Ingredient A–Z</button></div></aside>
+      <div class="results-panel"><div class="results-head"><div><p class="eyebrow" id="result-count">Loading records…</p><h2 id="results-heading">Reference records</h2></div><p class="data-note">Always verify the current Indian label, manufacturer information and regulatory requirements.</p></div><div id="results" class="record-grid" aria-live="polite"></div><div id="empty-state" class="empty-state" hidden><h3>No matching records</h3><p>Try a shorter search term or clear the filters.</p></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© <span data-year></span> Dr. T. T. Subramanian.</p><p>Professional reference; not prescribing authority.</p></footer>
+  <script src="assets/js/common.js"></script><script src="assets/js/toolbox.js"></script>
+</body>
+</html>
